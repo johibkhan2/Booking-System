@@ -1,0 +1,12 @@
+
+.navbar-text { margin-left: 15px; }
+.footer .footer-content {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.md-whiteframe-z2{
+  box-shadow: none;
+}
