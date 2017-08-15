@@ -26,7 +26,6 @@ describe('API endpoint /appointments', function () {
         expect(res).to.be.json;
       })
       .catch((err) => {
-        console.log(err.response);
         err
           .response
           .should
@@ -47,9 +46,7 @@ describe('API endpoint /appointments', function () {
       .request(url)
       .post('/api/appointments')
       .send({empId: '100002', name: 'johib', date: '2017-09-16T04:30:00.000Z'})
-      //2017-09-16T04:30:00.000Z
       .then(function (res) {
-        console.log('res'+res);
         expect(res)
           .to
           .have
