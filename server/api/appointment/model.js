@@ -5,9 +5,9 @@ var mongoose = restful.mongoose;
 
 // Schema
 var appointmentSchema = new mongoose.Schema({
-  date: Date,
-  name: String,
-  empId: String,
+  date: { type: Date, unique: true,required: true },
+  name: { type: String,required: true,min:3 },
+  empId: { type: String,required: true,min: 5},
   status: Boolean
 });
 

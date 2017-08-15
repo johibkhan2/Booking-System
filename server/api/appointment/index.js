@@ -3,7 +3,7 @@
 var express = require('express');
 var router = express.Router();
 
-//Product
+//Employee
 var Appointment = require('./model');
 Appointment.methods(['get', 'put', 'post', 'delete']);
 Appointment.register(router, '/appointments');
