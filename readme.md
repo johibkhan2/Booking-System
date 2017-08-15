@@ -17,3 +17,7 @@ npm install -g mocha
 ##run following command
 mocha
 
+##command line execution
+##go to command_line folder and execute below command
+node index.js data.txt
+
